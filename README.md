@@ -1,5 +1,5 @@
 # Tvheadend-Browser-Client
-This is a browser client for Tvheadend. It allows to watch TV, list the EPG-information and display the PVR-data, all inside of your internet browser.
+This is a browser client for Tvheadend running on a PHP-server. It allows to watch TV, list the EPG-information and display the PVR-data, all inside of your internet browser.
 
 System requirements:
 The client is tested on a raspberry pi 4B+ with PHP 7.3.19, Apache 2.4.38 and Tvheadend 4.2.8. The browser I use is Google Chrome version 87.
