@@ -1,5 +1,19 @@
 <HTML>
 
+<script>
+
+var tvp;
+
+window.onload=starttv;
+
+function starttv()
+  {
+  tvp=document.getElementById("tvplayer");
+  tvp.play();
+  }
+
+</script>
+
 <?php
   echo "<link rel='icon' ";
   if (isset($_GET["logo"]))
@@ -18,7 +32,7 @@
 
   if (isset($_GET["channel"]))
     {
-    echo "<video controls autoplay height=\"100%\" width=\"100%\">\r\n";
+    echo "<video id='tvplayer' controls preload='none' height=\"100%\" width=\"100%\">\r\n";
     echo "<source src=\"".base64_decode($_GET["channel"])."\">\r\n";
     echo "<center>\r\n";
     echo "<i>Sorry, der Browser unterst&uuml;tzt kein MP4</i>\r\n"; 
